@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Registar";
+    Layout = "~/Views/Shared/_RegistroLayout.cshtml";
+}
+
+<!--begin::Wrapper-->
+<div class="kt-login-v2__wrapper">
+    <div class="kt-login-v2__container">
+        <div class="kt-login-v2__title">
+            <h3>Criar Conta</h3>
+        </div>
+
+        <!--begin::Form-->
+        <form class="kt-login-v2__form kt-form" action="" autocomplete="off">
+            <div class="form-group">
+                <input class="form-control" type="email" placeholder="Email *" name="email" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <input class="form-control" type="password" placeholder="Password *" name="password" autocomplete="off" required>
+                    <div class="input-group-append">
+                        <a href="#"><i class="fa fa-eye mt-4"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <input class="form-control" type="password" placeholder="Confirm Password *" name="confirm_password" autocomplete="off" required>
+                    <div class="input-group-append">
+                        <a href="#"><i class="fa fa-eye mt-4"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group ">
+            </div>
+            <!--begin::Action-->
+            <div class="kt-login-v2__actions">
+                <a href="#" class="kt-link kt-link--brand">
+
+                </a>
+                <button type="submit" class="btn btn-brand btn-elevate btn-pill">Criar Conta</button>
+            </div>
+
+            <!--end::Action-->
+        </form>
+
+        <!--end::Form-->
+        <!--end::Options-->
+    </div>
+</div>
+
+<!--begin::Image-->
+<div class="kt-login-v2__image">
+    <img src="@Url.Content("~/lib/Template/dist/assets/media/misc/bg_icon.svg")" alt="">
+</div>
+
+<!--begin::Image-->
+
+<script src="~/js/Registar.js"></script>

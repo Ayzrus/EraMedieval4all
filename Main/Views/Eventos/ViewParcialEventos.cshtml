@@ -1,0 +1,171 @@
+﻿@model Main.Models.Eventos.EventosViewParcialModel
+
+<div class="kt-portlet">
+    <div class="kt-portlet__head">
+        <div class="kt-portlet__head-label text-center">
+            <h3 class="kt-portlet__head-title">
+                @if (Model.IsEdit)
+                {
+                    <text>Editar Evento</text>
+                }
+                else
+                {
+                    <text>Registar Evento</text>
+                }
+            </h3>
+        </div>
+        <div class="kt-portlet__head-toolbar">
+            <div class="kt-portlet__head-group d-flex gap-2">
+                <button onclick="cancel()" id="cancelarButton" class="btn btn-secondary">Cancelar</button>
+                <button onclick="concluir('@Model.IsEdit', '@(Model.IsEdit ? Model.Evento?.Id : 0)')" id="gravarButton" class="btn btn-outline-accent">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6 d-flex flex-column gap-3">
+        <div class="kt-portlet">
+            <div class="kt-portlet__head">
+                <div class="kt-portlet__head-label text-center">
+                    <h3 class="kt-portlet__head-title">
+                        Informações
+                    </h3>
+                </div>
+            </div>
+            <div class="kt-portlet__body">
+                <div class="kt-section kt-section--first">
+                    <div class="form-group">
+                        <label>Localidade <span class="text-danger">*</span>:</label>
+                        <input type="text" class="form-control" id="localidade" placeholder="Localidade"
+                               value="@Model.Evento?.Localidade">
+                        <span class="form-text text-muted">Introduza Localidade.</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Descricao <span class="text-danger">*</span>:</label>
+                        <input type="text" class="form-control" id="descricao" placeholder="Descricao"
+                               value="@Model.Evento?.Descricao">
+                        <span class="form-text text-muted">Introduza Descricao.</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Titulo <span class="text-danger">*</span>:</label>
+                        <input type="text" class="form-control" id="titulo" placeholder="Titulo"
+                               value="@Model.Evento?.Titulo">
+                        <span class="form-text text-muted">Introduza a Titulo.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-6 d-flex flex-column gap-3">
+        <div class="kt-portlet">
+            <div class="kt-portlet__head">
+                <div class="kt-portlet__head-label text-center">
+                    <h3 class="kt-portlet__head-title">
+                        Detalhes
+                    </h3>
+                </div>
+            </div>
+            <div class="kt-portlet__body">
+                <div class="kt-section kt-section--first">
+                    <div class="form-group">
+                        <label>Data de Entrega <span class="text-danger">*</span>:</label>
+                        <div class="input-group date">
+                            <input type="text" class="form-control datepicker" id="datainicio" placeholder="Selecione a data"
+                                   value="@Model.Evento?.DataInicio.ToString("yyyy-MM-dd")">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary set-today" type="button">Hoje</button>
+                                <button class="btn btn-outline-secondary clear-date" type="button">Limpar</button>
+                            </div>
+                        </div>
+                        <span class="form-text text-muted">Introduza a data de inicio.</span>
+                    </div>
+                </div>                
+                <div class="kt-section kt-section--first">
+                    <div class="form-group">
+                        <label>Data de Entrega <span class="text-danger">*</span>:</label>
+                        <div class="input-group date">
+                            <input type="text" class="form-control datepicker" id="datafim" placeholder="Selecione a data"
+                                   value="@Model.Evento?.DataFim.ToString("yyyy-MM-dd")">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary set-today" type="button">Hoje</button>
+                                <button class="btn btn-outline-secondary clear-date" type="button">Limpar</button>
+                            </div>
+                        </div>
+                        <span class="form-text text-muted">Introduza a data de fim.</span>
+                    </div>
+                </div>
+                <div class="kt-section kt-section--first">
+                    <div class="form-group">
+                        <label>Facebook <span class="text-danger">*</span>:</label>
+                        <input type="text" class="form-control" id="facebook" placeholder="Facebook"
+                               value="@Model.Evento?.Facebook">
+                        <span class="form-text text-muted">Introduza o Facebook.</span>
+                    </div>
+                </div>                
+                <div class="kt-section kt-section--first">
+                    <div class="form-group">
+                        <label>Instagram <span class="text-danger">*</span>:</label>
+                        <input type="text" class="form-control" id="instagram" placeholder="Instagram"
+                               value="@Model.Evento?.Instagram">
+                        <span class="form-text text-muted">Introduza o Instagram.</span>
+                    </div>
+                </div>                
+                <div class="kt-section kt-section--first">
+                    <div class="form-group">
+                        <label>TikTok <span class="text-danger">*</span>:</label>
+                        <input type="text" class="form-control" id="tikTok" placeholder="TikTok"
+                               value="@Model.Evento?.TikTok">
+                        <span class="form-text text-muted">Introduza o TikTok.</span>
+                    </div>
+                </div>
+                <div class="kt-section kt-section--first">
+                    <div class="form-group">
+                        <label>Organizadores <span class="text-danger">*</span>:</label>
+                        <div>
+                            <div class="d-flex align-items-center mb-2" id="selectGroup3">
+                                @if (Model.IsEdit)
+                                {
+                                    <select class="form-control" id="organizadores" name="organizadores">
+                                        <option value="">Selecione um cliente</option>
+                                        @foreach (var item in Model.Organizadores)
+                                        {
+                                            if (item.Id == Model.Evento?.Organizador)
+                                            {
+                                                <option selected value="@item.Id">
+                                                    @item.Nome
+                                                </option>
+                                            }
+
+                                            {
+                                                <option value="@item.Id">
+                                                    @item.Nome
+                                                </option>
+                                            }
+                                        }
+                                    </select>
+                                }
+                                else
+                                {
+                                    <select class="form-control" id="organizadores">
+                                        <option value="">Selecione um organizador</option>
+                                        @foreach (var item in Model.Organizadores)
+                                        {
+                                            <option value="@item.Id">
+                                                @item.Nome
+                                            </option>
+                                        }
+                                    </select>
+                                }
+                            </div>
+                        </div>
+                        <span class="form-text text-muted">Selecione o organizador.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="~/js/Eventos.js"></script>

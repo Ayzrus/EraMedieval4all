@@ -1,0 +1,206 @@
+﻿@model Main.Models.Dashboard.DashboardModel
+
+@{
+	ViewData["Title"] = "Dashboard";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+	
+	<div class="col-lg-6 col-xl-4 order-lg-1 order-xl-1">
+
+		<!--begin::Portlet-->
+		<div class="kt-portlet kt-portlet--height-fluid">
+			<div class="kt-portlet__head  kt-portlet__head--noborder">
+				<div class="kt-portlet__head-label">
+					<h3 class="kt-portlet__head-title">Alugueres Ativos</h3>
+				</div>
+			</div>
+			<div class="kt-portlet__body kt-portlet__body--fluid">
+				<div class="kt-widget-20">
+					<div class="kt-widget-20__title">
+						<div class="kt-widget-20__label">@Model.Aluguer</div>
+						<img class="kt-widget-20__bg" src="~/lib/Template/dist/assets/media/misc/iconbox_bg.png" alt="bg">
+					</div>
+					<div class="kt-widget-20__data">
+						<div class="kt-widget-20__chart">
+							<a href="#" class="btn btn-icon btn-sm btn-circle btn-brand"><i class="fa fa-user-alt"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--end::Portlet-->
+	</div>
+	<div class="col-lg-6 col-xl-4 order-lg-1 order-xl-1">
+
+		<!--begin::Portlet-->
+		<div class="kt-portlet kt-portlet--height-fluid">
+			<div class="kt-portlet__head  kt-portlet__head--noborder">
+				<div class="kt-portlet__head-label">
+					<h3 class="kt-portlet__head-title">Trajes alugados / Total registados</h3>
+				</div>
+			</div>
+			<div class="kt-portlet__body kt-portlet__body--fluid">
+				<div class="kt-widget-20">
+					<div class="kt-widget-20__title">
+						<div class="kt-widget-20__label">@Model.TrajesAlugados/@Model.TrajesRegistados</div>
+						<img class="kt-widget-20__bg" src="~/lib/Template/dist/assets/media/misc/iconbox_bg.png" alt="bg">
+					</div>
+					<div class="kt-widget-20__data">
+						<div class="kt-widget-20__chart">
+							<a href="#" class="btn btn-icon btn-sm btn-circle btn-warning"><i class="fa fa-user-friends"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--end::Portlet-->
+	</div>
+	<div class="col-lg-6 col-xl-4 order-lg-1 order-xl-1">
+
+		<!--begin::Portlet-->
+		<div class="kt-portlet kt-portlet--height-fluid">
+			<div class="kt-portlet__head  kt-portlet__head--noborder">
+				<div class="kt-portlet__head-label">
+					<h3 class="kt-portlet__head-title">Total de valor de alugueres ano atual</h3>
+				</div>
+			</div>
+			<div class="kt-portlet__body kt-portlet__body--fluid">
+				<div class="kt-widget-20">
+					<div class="kt-widget-20__title">
+						<div class="kt-widget-20__label">@Model.ValorTotal€</div>
+						<img class="kt-widget-20__bg" src="~/lib/Template/dist/assets/media/misc/iconbox_bg.png" alt="bg">
+					</div>
+					<div class="kt-widget-20__data">
+						<div class="kt-widget-20__chart">
+							<a href="#" class="btn btn-icon btn-sm btn-circle btn-success"><i class="fa fa-euro-sign"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--end::Portlet-->
+	</div>
+</div>
+
+<!-- First Portlet: Table of Consults-->
+<div class="kt-portlet">
+	<div class="kt-portlet__head">
+		<div class="kt-portlet__head-label text-center">
+			<h3 class="kt-portlet__head-title">
+				Ultimos 5 clientes
+			</h3>
+		</div>
+	</div>
+	<div class="kt-portlet__body">
+		<div class="spinner-border text-primary" id="loading3" style="display: none; text-align: center;">
+			<span class="sr-only">Loading...</span>
+		</div>
+
+		<table class="table table-striped- table-bordered table-hover dataTable no-footer dtr-inline" id="kt_table_9" style="display: none;">
+			<thead>
+				<tr>
+					<th>Nif</th>
+					<th>Nome</th>
+					<th>Morada</th>
+					<th>Email</th>
+					<th>Telefone</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var item in Model.Cliente)
+				{
+					<tr>
+						<td>@item.Nif</td>
+						<td>@item.Nome</td>
+						<td>@item.Morada</td>
+						<td>@item.Email</td>
+						<td>@item.Telefone</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<!-- First Portlet: Table of Consults-->
+<div class="kt-portlet">
+	<div class="kt-portlet__head">
+		<div class="kt-portlet__head-label text-center">
+			<h3 class="kt-portlet__head-title">
+				Ultimos 10 trajes alugados
+			</h3>
+		</div>
+	</div>
+	<div class="kt-portlet__body">
+		<div class="spinner-border text-primary" id="loading4" style="display: none; text-align: center;">
+			<span class="sr-only">Loading...</span>
+		</div>
+
+		<table class="table table-striped- table-bordered table-hover dataTable no-footer dtr-inline" id="kt_table_10" style="display: none;">
+			<thead>
+				<tr>
+					<th>Ref</th>
+					<th>Descrição</th>
+					<th>Data Aluguer</th>
+					<th>Data Entrega</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var trajes in Model.Trajes)
+				{
+					<tr>
+						<td>@trajes.Ref</td>
+						<td>@trajes.Nome</td>
+						<td>@trajes.DataAlugou</td>
+						<td>@trajes.DataEntrega.ToShortDateString()</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<!-- First Portlet: Table of Consults-->
+<div class="kt-portlet">
+	<div class="kt-portlet__head">
+		<div class="kt-portlet__head-label text-center">
+			<h3 class="kt-portlet__head-title">
+				Clientes não utilizadores
+			</h3>
+		</div>
+	</div>
+	<div class="kt-portlet__body">
+		<div class="spinner-border text-primary" id="loading1" style="display: none; text-align: center;">
+			<span class="sr-only">Loading...</span>
+		</div>
+
+		<table class="table table-striped- table-bordered table-hover dataTable no-footer dtr-inline" id="kt_table_11" style="display: none;">
+			<thead>
+				<tr>
+					<th>Nif</th>
+					<th>Nome</th>
+					<th>Morada</th>
+					<th>Email</th>
+					<th>Telefone</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var item in Model.ClienteN)
+				{
+					<tr>
+						<td>@item.Nif</td>
+						<td>@item.Nome</td>
+						<td>@item.Morada</td>
+						<td>@item.Email</td>
+						<td>@item.Telefone</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+</div>

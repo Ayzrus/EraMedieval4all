@@ -1,0 +1,71 @@
+﻿@model IEnumerable<Main.Class.TrajesClass>
+
+@{
+    ViewData["Title"] = "Trajes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- First Portlet: Table of Consults-->
+<div class="kt-portlet">
+    <div class="kt-portlet__head">
+        <div class="kt-portlet__head-label text-center">
+            <h3 class="kt-portlet__head-title">
+                Listagem
+            </h3>
+        </div>
+    </div>
+    <div class="kt-portlet__body">
+        <div class="spinner-border text-primary" id="loading3" style="display: none; text-align: center;">
+            <span class="sr-only">Loading...</span>
+        </div>
+
+        <table class="table table-striped- table-bordered table-hover dataTable no-footer dtr-inline" id="kt_table_3" style="display: none;">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Estado</th>
+                    <th>Valor</th>
+                    <th>Armazem</th>
+                    <th>Foto</th>
+                    <th>Quantidade</th>
+                    <th>Especificação</th>
+                    <th>Tipo</th>
+                    <th>Ref</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var trajes in Model)
+                {
+                    <tr>
+                        <td>@trajes.Id</td>
+                        <td>@trajes.Nome</td>
+                        <td>@trajes.Estado</td>
+                        <td>@trajes.Valor</td>
+                        <td>@trajes.ArmazemNome</td>
+                        <td><img width="100" src="@Url.Content("~/assets/trajesPhotos/" + trajes.Foto)" /></td>
+                        <td>@trajes.Quantidade</td>
+                        <td>@trajes.Especificacao</td>
+                        <td>@trajes.Tipo</td>
+                        <td class="d-flex justify-content-between align-items-center">
+                            <div>
+                                @trajes.Ref
+                            </div>
+                            <div class="btn-group">
+                                <a href="@Url.Action("Editar", "Trajes", new { id = trajes.Id })" class="btn btn-outline-hover-brand btn-sm btn-icon"><i class="fa fa-edit"></i></a>
+                                <button onclick="off(@trajes.Id)" type="button" class="btn btn-outline-hover-danger btn-sm btn-icon"><i class="fa fa-power-off"></i></button>
+                                @if (Context.Session.GetString("tipo") == "Administrador")
+                                {
+                                    <button onclick="confirmDelete(@trajes.Id)" type="button" class="btn btn-outline-hover-danger btn-sm btn-icon"><i class="fa fa-trash"></i></button>
+                                }
+                            </div>
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script type="text/javascript" src="~/js/Trajes.js"></script>

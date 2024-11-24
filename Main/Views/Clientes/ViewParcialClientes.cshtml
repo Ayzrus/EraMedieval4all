@@ -1,0 +1,92 @@
+﻿@model Main.Models.Clientes.ClientesViewParcialModel
+
+<div class="kt-portlet">
+    <div class="kt-portlet__head">
+        <div class="kt-portlet__head-label text-center">
+            <h3 class="kt-portlet__head-title">
+                @if (Model.IsEdit)
+                {
+                    <text>Editar Cliente</text>
+                }
+                else
+                {
+                    <text>Registar Cliente</text>
+                }
+            </h3>
+        </div>
+        <div class="kt-portlet__head-toolbar">
+            <div class="kt-portlet__head-group d-flex gap-2">
+                <button onclick="cancel()" id="cancelarButton" class="btn btn-secondary">Cancelar</button>
+                <button onclick="concluir('@Model.IsEdit', '@(Model.IsEdit ? Model.Cliente?.Id : 0)')" id="gravarButton" class="btn btn-outline-accent">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6 d-flex flex-column gap-3">
+        <div class="kt-portlet">
+            <div class="kt-portlet__head">
+                <div class="kt-portlet__head-label text-center">
+                    <h3 class="kt-portlet__head-title">
+                        Informações
+                    </h3>
+                </div>
+            </div>
+            <div class="kt-portlet__body">
+                <div class="kt-section kt-section--first">
+                    <div class="form-group">
+                        <label>Nome <span class="text-danger">*</span>:</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Nome"
+                               value="@Model.Cliente?.Nome">
+                        <span class="form-text text-muted">Introduza o Nome.</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Email <span class="text-danger">*</span>:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email"
+                               value="@Model.Cliente?.Email">
+                        <span class="form-text text-muted">Introduza email.</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Nif <span class="text-danger">*</span>:</label>
+                        <input type="text" class="form-control" id="nif" placeholder="Nif"
+                               value="@Model.Cliente?.Nif">
+                        <span class="form-text text-muted">Introduza Nif.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-6 d-flex flex-column gap-3">
+        <div class="kt-portlet">
+            <div class="kt-portlet__head">
+                <div class="kt-portlet__head-label text-center">
+                    <h3 class="kt-portlet__head-title">
+                        Detalhes
+                    </h3>
+                </div>
+            </div>
+            <div class="kt-portlet__body">
+                <div class="kt-section kt-section--first">
+                    <div class="form-group">
+                        <label>Morada <span class="text-danger">*</span>:</label>
+                        <input type="text" class="form-control" id="morada" placeholder="Morada"
+                               value="@Model.Cliente?.Morada">
+                        <span class="form-text text-muted">Introduza Morada.</span>
+                    </div>
+                </div>
+                <div class="kt-section kt-section--first">
+                    <div class="form-group">
+                        <label>Telefone <span class="text-danger">*</span>:</label>
+                        <input type="tel" maxlength="9" class="form-control" id="telefone" placeholder="Telefone"
+                               value="@Model.Cliente?.Telefone">
+                        <span class="form-text text-muted">Introduza Telefone.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="~/js/Clientes.js"></script>

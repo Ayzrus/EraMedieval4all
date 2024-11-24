@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Perfil";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- First Portlet: Table of Consults-->
+<div class="kt-portlet kt-profile">
+	<div class="kt-profile__content">
+		<div class="row">
+			<div class="col-md-12 col-lg-5 col-xl-4">
+				<div class="kt-profile__main">
+					<div class="kt-profile__main-pic">
+						<img src="@Url.Content("~/lib/Template/dist/assets/media/users/default.jpg")" alt="">
+					</div>
+					<div class="kt-profile__main-info">
+						<div class="kt-profile__main-info-name">@Context.Session.GetString("nome")</div>
+							<div class="kt-profile__main-info-position">@Context.Session.GetString("email")</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

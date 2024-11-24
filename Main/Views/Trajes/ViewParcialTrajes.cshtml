@@ -1,0 +1,164 @@
+﻿@model Main.Models.Trajes.TrajesViewParcialModel
+
+<div class="kt-portlet">
+    <div class="kt-portlet__head">
+        <div class="kt-portlet__head-label text-center">
+            <h3 class="kt-portlet__head-title">
+                @if (Model.IsEdit)
+                {
+                    <text>Editar Traje</text>
+                }
+                else
+                {
+                    <text>Registar Traje</text>
+                }
+            </h3>
+        </div>
+        <div class="kt-portlet__head-toolbar">
+            <div class="kt-portlet__head-group d-flex gap-2">
+                <button onclick="cancel()" id="cancelarButton" class="btn btn-secondary">Cancelar</button>
+                <button onclick="concluir('@Model.IsEdit', '@(Model.IsEdit ? Model.Trajes?.Id : 0)')" id="gravarButton" class="btn btn-outline-accent">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6 d-flex flex-column gap-3">
+        <div class="kt-portlet">
+            <div class="kt-portlet__head">
+                <div class="kt-portlet__head-label text-center">
+                    <h3 class="kt-portlet__head-title">
+                        Informações
+                    </h3>
+                </div>
+            </div>
+            <div class="kt-portlet__body">
+                <div class="kt-section kt-section--first">
+                    <div class="form-group">
+                        <label>Nome <span class="text-danger">*</span>:</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Nome"
+                               value="@Model.Trajes?.Nome">
+                        <span class="form-text text-muted">Introduza o Nome.</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Valor <span class="text-danger">*</span>:</label>
+                        <input type="text" class="form-control" id="valor" placeholder="Valor"
+                               value="@Model.Trajes?.Valor">
+                        <span class="form-text text-muted">Introduza o valor.</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Quantidade <span class="text-danger">*</span>:</label>
+                        <input type="number" class="form-control" id="quantidade" placeholder="Quantidade"
+                               value="@Model.Trajes?.Valor">
+                        <span class="form-text text-muted">Introduza a Quantidade.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="kt-portlet">
+            <div class="kt-portlet__head">
+                <div class="kt-portlet__head-label text-center">
+                    <h3 class="kt-portlet__head-title">
+                        Outras Informações
+                    </h3>
+                </div>
+            </div>
+            <div class="kt-portlet__body">
+                <div class="kt-section kt-section--first">
+                    <div class="form-group">
+                        <label>Médicos <span class="text-danger">*</span>:</label>
+                        <div>
+                            <div class="d-flex align-items-center mb-2" id="selectGroup3">
+                                @if (Model.IsEdit)
+                                {
+                                    <select class="form-control" id="armazem" name="armazem">
+                                        <option value="">Selecione um armazem</option>
+                                        @foreach (var item in Model.Armazem)
+                                        {
+                                            if (item.Id == Model.Trajes?.Armazem)
+                                            {
+                                                <option selected value="@item.Id">
+                                                    @item.Nome
+                                                </option>
+                                            }
+
+                                            {
+                                                <option value="@item.Id">
+                                                    @item.Nome
+                                                </option>
+                                            }
+                                        }
+                                    </select>
+                                }
+                                else
+                                {
+                                    <select class="form-control" id="armazem">
+                                        <option value="">Selecione um armazem</option>
+                                        @foreach (var item in Model.Armazem)
+                                        {
+                                            <option value="@item.Id">
+                                                @item.Nome
+                                            </option>
+                                        }
+                                    </select>
+                                }
+                            </div>
+                        </div>
+                        <span class="form-text text-muted">Selecione o armazem.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-6 d-flex flex-column gap-3">
+        <div class="kt-portlet">
+            <div class="kt-portlet__head">
+                <div class="kt-portlet__head-label text-center">
+                    <h3 class="kt-portlet__head-title">
+                        Detalhes
+                    </h3>
+                </div>
+            </div>
+            <div class="kt-portlet__body">
+                <div class="kt-section kt-section--first">
+                    <div class="form-group">
+                        <label>Especificacao <span class="text-danger">*</span>:</label>
+                        <input type="text" class="form-control" id="especificacao" placeholder="Especificacao"
+                               value="@Model.Trajes?.Especificacao">
+                        <span class="form-text text-muted">Introduza a Especificacao.</span>
+                    </div>
+                </div>                
+                <div class="kt-section kt-section--first">
+                    <div class="form-group">
+                        <label>Ref <span class="text-danger">*</span>:</label>
+                        <input type="text" class="form-control" id="ref" placeholder="Ref"
+                               value="@Model.Trajes?.Ref">
+                        <span class="form-text text-muted">Introduza a Ref.</span>
+                    </div>
+                </div>
+                <div class="kt-section kt-section--first">
+                    <div class="form-group">
+                        <label>Tipo <span class="text-danger">*</span>:</label>
+                        <input type="text" class="form-control" id="tipo" placeholder="Tipo"
+                               value="@Model.Trajes?.Tipo">
+                        <span class="form-text text-muted">Introduza o Tipo da peça.</span>
+                    </div>
+                </div>
+                <div class="kt-section kt-section--first">
+                    <div class="form-group">
+                        <div></div>
+                        <div class="custom-file">
+                            <input accept="image/*" type="file" class="custom-file-input" id="foto">
+                            <label class="custom-file-label" for="customFile">Escolhe uma foto</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="~/js/Trajes.js"></script>

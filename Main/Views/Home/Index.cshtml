@@ -1,0 +1,50 @@
+﻿@{
+	ViewData["Title"] = "Login";
+	Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+
+<!--begin::Wrapper-->
+<div class="kt-login-v2__wrapper">
+	<div class="kt-login-v2__container">
+		<div class="kt-login-v2__title">
+			<h3>Login</h3>
+		</div>
+
+		<!--begin::Form-->
+		<form class="kt-login-v2__form kt-form" action="">
+			<div class="form-group">
+				<input class="form-control" type="text" placeholder="Email" name="email">
+			</div>
+			<div class="form-group">
+				<div class="input-group">
+					<input class="form-control" type="password" placeholder="Password *" name="password" autocomplete="off" required>
+					<div class="input-group-append">
+						<a href="#"><i class="fa fa-eye mt-4"></i></a>
+					</div>
+				</div>
+			</div>
+
+			<!--begin::Action-->
+			<div class="kt-login-v2__actions">
+				<a href="#" onclick="forgout()" class="kt-link kt-link--brand">
+					Esqueceste da password?
+				</a>
+				<button type="submit" class="btn btn-brand btn-elevate btn-pill">Login</button>
+			</div>
+
+			<!--end::Action-->
+		</form>
+
+		<!--end::Form-->
+		<!--end::Options-->
+	</div>
+</div>
+
+<!--begin::Image-->
+<div class="kt-login-v2__image">
+	<img src="@Url.Content("~/lib/Template/dist/assets/media/misc/bg_icon.svg")" alt="">
+</div>
+
+<!--begin::Image-->
+
+<script src="~/js/Login.js"></script>

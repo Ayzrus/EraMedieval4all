@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+    <!--Font Style-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+
+    <!-- Template Plugins and Styles -->
+    <link href="~/lib/Template/dist/assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" />
+    <link href="~/lib/Template/dist/assets/css/skins/header/base/light.css" rel="stylesheet" />
+    <link href="~/lib/Template/dist/assets/css/skins/header/menu/light.css" rel="stylesheet" />
+    <link href="~/lib/Template/dist/assets/css/skins/brand/navy.css" rel="stylesheet" />
+    <link href="~/lib/Template/dist/assets/css/skins/aside/navy.css" rel="stylesheet" />
+    <link href="~/lib/Template/dist/assets/plugins/global/plugins.bundle.css" rel="stylesheet" />
+    <link href="~/lib/Template/dist/assets/css/style.bundle.css" rel="stylesheet" />
+    <link href="~/lib/Template/dist/assets/css/pages/login/login-v2.css" rel="stylesheet" />
+
+    <!-- Specific Page CSS -->
+    <link rel="stylesheet" href="~/Main.styles.css" asp-append-version="true" />
+</head>
+<body class="kt-login-v2--enabled kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed kt-page--loading">
+
+
+    <div class="kt-grid kt-grid--ver kt-grid--root">
+        <div class="kt-grid__item   kt-grid__item--fluid kt-grid  kt-grid kt-grid--hor kt-login-v2" id="kt_login_v2">
+
+            <!--begin::Item-->
+            <div class="kt-grid__item  kt-grid--hor">
+
+                <!--begin::Heade-->
+                <div class="kt-login-v2__head">
+                    <div class="kt-login-v2__logo">
+                        <a asp-area="" asp-controller="Home" asp-action="Index">
+                            <img alt="Logo" style="width: 150px" src="@Url.Content("~/lib/Template/dist/assets/media/logos/logo-11.png")" />
+                        </a>
+                    </div>
+                    <div class="kt-login-v2__signup">
+                        <span>Já tens conta?</span>
+                        <a class="kt-link kt-font-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                            Login
+                        </a>
+                    </div>
+                </div>
+
+                <!--begin::Head-->
+            </div>
+
+            <!--end::Item-->
+            <!--begin::Item-->
+            <div class="kt-grid__item  kt-grid  kt-grid--ver  kt-grid__item--fluid">
+
+                <!--begin::Body-->
+                <div class="kt-login-v2__body">
+                    @RenderBody()
+                </div>
+
+                <!--begin::Body-->
+            </div>
+
+            <!--end::Item-->
+            <!--begin::Item-->
+            <div class="kt-grid__item">
+                <div class="kt-login-v2__footer">
+                    <div class="kt-login-v2__info">
+                        <a href="#" class="kt-link">&copy; 2024 Rodrigo Carvalho</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--end::Item-->
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        var KTAppOptions = {
+            "colors": {
+                "state": {
+                    "brand": "#5d78ff",
+                    "metal": "#c4c5d6",
+                    "light": "#ffffff",
+                    "accent": "#00c5dc",
+                    "primary": "#5867dd",
+                    "success": "#34bfa3",
+                    "info": "#36a3f7",
+                    "warning": "#ffb822",
+                    "danger": "#fd3995",
+                    "focus": "#9816f4"
+                },
+                "base": {
+                    "label": [
+                        "#c5cbe3",
+                        "#a1a8c3",
+                        "#3d4465",
+                        "#3e4466"
+                    ],
+                    "shape": [
+                        "#f0f3ff",
+                        "#d9dffa",
+                        "#afb4d4",
+                        "#646c9a"
+                    ]
+                }
+            }
+        };
+    </script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/Template/dist/assets/plugins/global/plugins.bundle.js"></script>
+    <script src="~/lib/Template/dist/assets/js/scripts.bundle.js"></script>
+    <script src="~/lib/Template/dist/assets/plugins/custom/datatables/datatables.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

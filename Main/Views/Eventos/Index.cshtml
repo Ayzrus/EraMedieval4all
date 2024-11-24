@@ -1,0 +1,70 @@
+﻿@model IEnumerable<Main.Class.EventosClass>
+
+@{
+    ViewData["Title"] = "Clientes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- First Portlet: Table of Consults-->
+<div class="kt-portlet">
+    <div class="kt-portlet__head">
+        <div class="kt-portlet__head-label text-center">
+            <h3 class="kt-portlet__head-title">
+                Listagem
+            </h3>
+        </div>
+    </div>
+    <div class="kt-portlet__body">
+        <div class="spinner-border text-primary" id="loading3" style="display: none; text-align: center;">
+            <span class="sr-only">Loading...</span>
+        </div>
+
+        <table class="table table-striped- table-bordered table-hover dataTable no-footer dtr-inline" id="kt_table_3" style="display: none;">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Localidade</th>
+                    <th>Descricao</th>
+                    <th>Titulo</th>
+                    <th>DataInicio</th>
+                    <th>DataFim</th>
+                    <th>Facebook</th>
+                    <th>Instagram</th>
+                    <th>TikTok</th>
+                    <th>Organizador</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Localidade</td>
+                        <td>@item.Descricao</td>
+                        <td>@item.Titulo</td>
+                        <td>@item.DataInicio</td>
+                        <td>@item.DataFim</td>
+                        <td>@item.Facebook</td>
+                        <td>@item.Instagram</td>
+                        <td>@item.TikTok</td>
+                        <td class="d-flex justify-content-between align-items-center">
+                            <div>
+                                @item.OrganizadorNome
+                            </div>
+                            <div class="btn-group">
+                                <a href="@Url.Action("Editar", "Eventos", new { id = item.Id })" class="btn btn-outline-hover-brand btn-sm btn-icon"><i class="fa fa-edit"></i></a>
+                                @if (Context.Session.GetString("tipo") == "Administrador")
+                                {
+                                    <button onclick="confirmDelete(@item.Id)" type="button" class="btn btn-outline-hover-danger btn-sm btn-icon"><i class="fa fa-trash"></i></button>
+                                }
+                            </div>
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script type="text/javascript" src="~/js/Eventos.js"></script>

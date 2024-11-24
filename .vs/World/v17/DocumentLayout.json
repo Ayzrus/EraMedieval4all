@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\WSP\\source\\repos\\World\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{99E3B1B6-0B10-42ED-A0D3-36CD5EFEA501}|Main\\Main.csproj|c:\\users\\wsp\\source\\repos\\world\\main\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{99E3B1B6-0B10-42ED-A0D3-36CD5EFEA501}|Main\\Main.csproj|solutionrelative:main\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99E3B1B6-0B10-42ED-A0D3-36CD5EFEA501}|Main\\Main.csproj|c:\\users\\wsp\\source\\repos\\world\\main\\class\\referenciaclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99E3B1B6-0B10-42ED-A0D3-36CD5EFEA501}|Main\\Main.csproj|solutionrelative:main\\class\\referenciaclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\WSP\\source\\repos\\World\\Main\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Main\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\WSP\\source\\repos\\World\\Main\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Main\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAAALwAAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T14:45:42.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReferenciaClass.cs",
+              "DocumentMoniker": "C:\\Users\\WSP\\source\\repos\\World\\Main\\Class\\ReferenciaClass.cs",
+              "RelativeDocumentMoniker": "Main\\Class\\ReferenciaClass.cs",
+              "ToolTip": "C:\\Users\\WSP\\source\\repos\\World\\Main\\Class\\ReferenciaClass.cs",
+              "RelativeToolTip": "Main\\Class\\ReferenciaClass.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJgAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T10:52:46.185Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
