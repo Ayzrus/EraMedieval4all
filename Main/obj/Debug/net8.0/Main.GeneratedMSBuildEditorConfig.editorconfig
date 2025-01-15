@@ -17,153 +17,153 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Main
 build_property.RootNamespace = Main
-build_property.ProjectDir = D:\EraMedieval4all\Main\
+build_property.ProjectDir = C:\Users\rodri\Documents\AyzrusDev\EraMedieval4all\Main\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\EraMedieval4all\Main
+build_property.MSBuildProjectDirectory = C:\Users\rodri\Documents\AyzrusDev\EraMedieval4all\Main
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/EraMedieval4all/Main/Views/Aluguer/Editar.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Aluguer/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1Z3VlclxFZGl0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Aluguer/Index.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Aluguer/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1Z3VlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Aluguer/Registar.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Aluguer/Registar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1Z3VlclxSZWdpc3Rhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Aluguer/Trajes.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Aluguer/Trajes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1Z3VlclxUcmFqZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Aluguer/ViewParcialAluguer.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Aluguer/ViewParcialAluguer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1Z3VlclxWaWV3UGFyY2lhbEFsdWd1ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Clientes/Editar.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Clientes/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRWRpdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Clientes/Index.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Clientes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Clientes/Registar.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Clientes/Registar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcUmVnaXN0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Clientes/ViewParcialClientes.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Clientes/ViewParcialClientes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcVmlld1BhcmNpYWxDbGllbnRlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Dashboard/Index.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Dashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Eventos/Editar.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Eventos/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRvc1xFZGl0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Eventos/Index.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Eventos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRvc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Eventos/Organizador.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Eventos/Organizador.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRvc1xPcmdhbml6YWRvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Eventos/Registar.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Eventos/Registar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRvc1xSZWdpc3Rhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Eventos/ViewParcialEventos.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Eventos/ViewParcialEventos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRvc1xWaWV3UGFyY2lhbEV2ZW50b3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Home/Index.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Home/Register.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Home/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Relatorios/Bloqueados.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Relatorios/Bloqueados.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRvcmlvc1xCbG9xdWVhZG9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Relatorios/Index.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Relatorios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRvcmlvc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Shared/Error.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Shared/Error404.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Shared/Error404.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yNDA0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Shared/_LoginLayout.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Shared/_LoginLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Shared/_RegistroLayout.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Shared/_RegistroLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9SZWdpc3Ryb0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Trajes/Editar.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Trajes/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhamVzXEVkaXRhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Trajes/Index.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Trajes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhamVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Trajes/Registar.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Trajes/Registar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhamVzXFJlZ2lzdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Trajes/ViewParcialTrajes.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Trajes/ViewParcialTrajes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhamVzXFZpZXdQYXJjaWFsVHJhamVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Users/Index.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Users/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Users/Perfil.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Users/Perfil.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcUGVyZmlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Users/Registar.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Users/Registar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcUmVnaXN0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Users/UsersList.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Users/UsersList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcVXNlcnNMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/_ViewImports.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/_ViewStart.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/EraMedieval4all/Main/Views/Shared/_Layout.cshtml]
+[C:/Users/rodri/Documents/AyzrusDev/EraMedieval4all/Main/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-i1uqmzhr2g

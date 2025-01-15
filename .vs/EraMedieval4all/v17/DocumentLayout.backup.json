@@ -1,12 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\EraMedieval4all\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\rodri\\Documents\\AyzrusDev\\EraMedieval4all\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{99E3B1B6-0B10-42ED-A0D3-36CD5EFEA501}|Main\\Main.csproj|c:\\users\\rodri\\documents\\ayzrusdev\\eramedieval4all\\main\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{99E3B1B6-0B10-42ED-A0D3-36CD5EFEA501}|Main\\Main.csproj|solutionrelative:main\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 262,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\rodri\\Documents\\AyzrusDev\\EraMedieval4all\\Main\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Main\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\rodri\\Documents\\AyzrusDev\\EraMedieval4all\\Main\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Main\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-19T12:04:36.102Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

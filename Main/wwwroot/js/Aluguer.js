@@ -1,38 +1,46 @@
-﻿function setModalId(id) {
+﻿// Global array to store selected costume IDs
+let selectedCostumes = [];
+
+function setModalId(id) {
     document.getElementById('exampleModalCenter').setAttribute('data-id', id);
 }
 
-document.querySelector('#exampleModalCenter .salvar').addEventListener('click', function () {
-    var modal = document.getElementById('exampleModalCenter');
-    var modalId = modal.getAttribute('data-id');
-    var dataentrega = document.getElementById('dataentrega').value;
-    const requestData = { Id: modalId, DataEntrega: dataentrega };
-    fetch("/Aluguer/Copy", {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(requestData)
-    })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                swal.fire({
-                    type: 'success',
-                    title: 'Copiado!',
-                    text: 'Copiado com sucesso.',
-                    timer: 3000,
-                    showConfirmButton: false,
-                    onOpen: () => { swal.showLoading(); }
-                }).then(() => location.reload());
-            } else {
-                showError(data.message);
-            }
-        })
-        .catch(error => {
-            console.error(error.message);
-            showError('Ocorreu um erro ao submeter os dados. Por favor, tente novamente.');
-            // Reset the save button
-        });
+document.addEventListener('DOMContentLoaded', function () {
+    var saveButton = document.querySelector('#exampleModalCenter .salvar');
 
+    if (saveButton) {
+        saveButton.addEventListener('click', function () {
+            var modal = document.getElementById('exampleModalCenter');
+            var modalId = modal.getAttribute('data-id');
+            var dataentrega = document.getElementById('dataentrega').value;
+            const requestData = { Id: modalId, DataEntrega: dataentrega };
+
+            fetch("/Aluguer/Copy", {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(requestData)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        swal.fire({
+                            type: 'success',
+                            title: 'Copiado!',
+                            text: 'Copiado com sucesso.',
+                            timer: 3000,
+                            showConfirmButton: false,
+                            onOpen: () => { swal.showLoading(); }
+                        }).then(() => location.reload());
+                    } else {
+                        showError(data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error(error.message);
+                    showError('Ocorreu um erro ao submeter os dados. Por favor, tente novamente.');
+                });
+        });
+    }
 });
 
 // Function to confirm deletion of an Consult
@@ -82,9 +90,6 @@ function confirmDelete(id) {
         }
     });
 }
-
-// Global array to store selected costume IDs
-let selectedCostumes = [];
 
 // Function to handle the selection of costumes
 function toggleCostumeSelection(costumeId) {

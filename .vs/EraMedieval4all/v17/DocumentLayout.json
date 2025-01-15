@@ -1,10 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\EraMedieval4all\\",
+  "WorkspaceRootPath": "C:\\Users\\rodri\\Documents\\AyzrusDev\\EraMedieval4all\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{99E3B1B6-0B10-42ED-A0D3-36CD5EFEA501}|Main\\Main.csproj|d:\\eramedieval4all\\main\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{99E3B1B6-0B10-42ED-A0D3-36CD5EFEA501}|Main\\Main.csproj|solutionrelative:main\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{99E3B1B6-0B10-42ED-A0D3-36CD5EFEA501}|Main\\Main.csproj|c:\\users\\rodri\\documents\\ayzrusdev\\eramedieval4all\\main\\wwwroot\\js\\aluguer.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{99E3B1B6-0B10-42ED-A0D3-36CD5EFEA501}|Main\\Main.csproj|solutionrelative:main\\wwwroot\\js\\aluguer.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99E3B1B6-0B10-42ED-A0D3-36CD5EFEA501}|Main\\Main.csproj|c:\\users\\rodri\\documents\\ayzrusdev\\eramedieval4all\\main\\views\\aluguer\\viewparcialaluguer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{99E3B1B6-0B10-42ED-A0D3-36CD5EFEA501}|Main\\Main.csproj|solutionrelative:main\\views\\aluguer\\viewparcialaluguer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99E3B1B6-0B10-42ED-A0D3-36CD5EFEA501}|Main\\Main.csproj|c:\\users\\rodri\\documents\\ayzrusdev\\eramedieval4all\\main\\views\\aluguer\\trajes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{99E3B1B6-0B10-42ED-A0D3-36CD5EFEA501}|Main\\Main.csproj|solutionrelative:main\\views\\aluguer\\trajes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99E3B1B6-0B10-42ED-A0D3-36CD5EFEA501}|Main\\Main.csproj|c:\\users\\rodri\\documents\\ayzrusdev\\eramedieval4all\\main\\views\\aluguer\\registar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{99E3B1B6-0B10-42ED-A0D3-36CD5EFEA501}|Main\\Main.csproj|solutionrelative:main\\views\\aluguer\\registar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99E3B1B6-0B10-42ED-A0D3-36CD5EFEA501}|Main\\Main.csproj|c:\\users\\rodri\\documents\\ayzrusdev\\eramedieval4all\\main\\views\\aluguer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{99E3B1B6-0B10-42ED-A0D3-36CD5EFEA501}|Main\\Main.csproj|solutionrelative:main\\views\\aluguer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99E3B1B6-0B10-42ED-A0D3-36CD5EFEA501}|Main\\Main.csproj|c:\\users\\rodri\\documents\\ayzrusdev\\eramedieval4all\\main\\views\\aluguer\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{99E3B1B6-0B10-42ED-A0D3-36CD5EFEA501}|Main\\Main.csproj|solutionrelative:main\\views\\aluguer\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99E3B1B6-0B10-42ED-A0D3-36CD5EFEA501}|Main\\Main.csproj|c:\\users\\rodri\\documents\\ayzrusdev\\eramedieval4all\\main\\wwwroot\\js\\eventos.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{99E3B1B6-0B10-42ED-A0D3-36CD5EFEA501}|Main\\Main.csproj|solutionrelative:main\\wwwroot\\js\\eventos.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99E3B1B6-0B10-42ED-A0D3-36CD5EFEA501}|Main\\Main.csproj|c:\\users\\rodri\\documents\\ayzrusdev\\eramedieval4all\\main\\views\\eventos\\viewparcialeventos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{99E3B1B6-0B10-42ED-A0D3-36CD5EFEA501}|Main\\Main.csproj|solutionrelative:main\\views\\eventos\\viewparcialeventos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +42,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 262,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\EraMedieval4all\\Main\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Main\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\EraMedieval4all\\Main\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Main\\Views\\Home\\Index.cshtml",
+              "DocumentIndex": 2,
+              "Title": "Trajes.cshtml",
+              "DocumentMoniker": "C:\\Users\\rodri\\Documents\\AyzrusDev\\EraMedieval4all\\Main\\Views\\Aluguer\\Trajes.cshtml",
+              "RelativeDocumentMoniker": "Main\\Views\\Aluguer\\Trajes.cshtml",
+              "ToolTip": "C:\\Users\\rodri\\Documents\\AyzrusDev\\EraMedieval4all\\Main\\Views\\Aluguer\\Trajes.cshtml",
+              "RelativeToolTip": "Main\\Views\\Aluguer\\Trajes.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T12:04:36.102Z",
+              "WhenOpened": "2025-01-15T13:30:32.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Registar.cshtml",
+              "DocumentMoniker": "C:\\Users\\rodri\\Documents\\AyzrusDev\\EraMedieval4all\\Main\\Views\\Aluguer\\Registar.cshtml",
+              "RelativeDocumentMoniker": "Main\\Views\\Aluguer\\Registar.cshtml",
+              "ToolTip": "C:\\Users\\rodri\\Documents\\AyzrusDev\\EraMedieval4all\\Main\\Views\\Aluguer\\Registar.cshtml",
+              "RelativeToolTip": "Main\\Views\\Aluguer\\Registar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T13:30:30.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\rodri\\Documents\\AyzrusDev\\EraMedieval4all\\Main\\Views\\Aluguer\\Editar.cshtml",
+              "RelativeDocumentMoniker": "Main\\Views\\Aluguer\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\rodri\\Documents\\AyzrusDev\\EraMedieval4all\\Main\\Views\\Aluguer\\Editar.cshtml",
+              "RelativeToolTip": "Main\\Views\\Aluguer\\Editar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T13:30:26.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ViewParcialAluguer.cshtml",
+              "DocumentMoniker": "C:\\Users\\rodri\\Documents\\AyzrusDev\\EraMedieval4all\\Main\\Views\\Aluguer\\ViewParcialAluguer.cshtml",
+              "RelativeDocumentMoniker": "Main\\Views\\Aluguer\\ViewParcialAluguer.cshtml",
+              "ToolTip": "C:\\Users\\rodri\\Documents\\AyzrusDev\\EraMedieval4all\\Main\\Views\\Aluguer\\ViewParcialAluguer.cshtml",
+              "RelativeToolTip": "Main\\Views\\Aluguer\\ViewParcialAluguer.cshtml",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAcwLAAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T13:23:39.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\rodri\\Documents\\AyzrusDev\\EraMedieval4all\\Main\\Views\\Aluguer\\Index.cshtml",
+              "RelativeDocumentMoniker": "Main\\Views\\Aluguer\\Index.cshtml",
+              "ToolTip": "C:\\Users\\rodri\\Documents\\AyzrusDev\\EraMedieval4all\\Main\\Views\\Aluguer\\Index.cshtml",
+              "RelativeToolTip": "Main\\Views\\Aluguer\\Index.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAcwF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T13:23:10.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Aluguer.js",
+              "DocumentMoniker": "C:\\Users\\rodri\\Documents\\AyzrusDev\\EraMedieval4all\\Main\\wwwroot\\js\\Aluguer.js",
+              "RelativeDocumentMoniker": "Main\\wwwroot\\js\\Aluguer.js",
+              "ToolTip": "C:\\Users\\rodri\\Documents\\AyzrusDev\\EraMedieval4all\\Main\\wwwroot\\js\\Aluguer.js",
+              "RelativeToolTip": "Main\\wwwroot\\js\\Aluguer.js",
+              "ViewState": "AgIAACMAAAAAAAAAAAAQwC4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-15T13:23:06.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Eventos.js",
+              "DocumentMoniker": "C:\\Users\\rodri\\Documents\\AyzrusDev\\EraMedieval4all\\Main\\wwwroot\\js\\Eventos.js",
+              "RelativeDocumentMoniker": "Main\\wwwroot\\js\\Eventos.js",
+              "ToolTip": "C:\\Users\\rodri\\Documents\\AyzrusDev\\EraMedieval4all\\Main\\wwwroot\\js\\Eventos.js",
+              "RelativeToolTip": "Main\\wwwroot\\js\\Eventos.js",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAIwJIAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-15T13:20:27.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ViewParcialEventos.cshtml",
+              "DocumentMoniker": "C:\\Users\\rodri\\Documents\\AyzrusDev\\EraMedieval4all\\Main\\Views\\Eventos\\ViewParcialEventos.cshtml",
+              "RelativeDocumentMoniker": "Main\\Views\\Eventos\\ViewParcialEventos.cshtml",
+              "ToolTip": "C:\\Users\\rodri\\Documents\\AyzrusDev\\EraMedieval4all\\Main\\Views\\Eventos\\ViewParcialEventos.cshtml",
+              "RelativeToolTip": "Main\\Views\\Eventos\\ViewParcialEventos.cshtml",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T13:20:19.978Z",
               "EditorCaption": ""
             }
           ]
